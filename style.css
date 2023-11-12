@@ -1,7 +1,4 @@
-#hangman_image{
-    width: 400px;
-    height: 400px;
-}
+
 
 /*BODY AND GENERAL STYLING*/
 
@@ -41,23 +38,38 @@ body{
     position: relative;
 }
 
+h1{
+    font-size: 30px;
+}
+
 h2{
-    font-size: 25px;
-    color: #265DC9;
+    font-size: 20px;
 }
 
 h3{
-    font-size: 20px;
-    color: #265DC9;
+    font-size: 15px;
+}
+
+button{
+    font-family: 'Starborn';
+    padding: 8px;
+    border-radius: 15px;
+    background-color: var(--blue-accent);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.7);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*GAME APP INTERFACE*/
+
+/*Title with glow effects*/
+
 .title{
     grid-column: 2/3;
     grid-row: 2/5;
     font-size: 100px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     line-height: 100px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 25px var(--pink-accent);
@@ -83,19 +95,17 @@ h3{
     filter: blur(2px);
 }
 
+/*Main app ui with glow effects*/
 
 .app{
     grid-column: 2/3;
     grid-row: 4/6;
-    background-color: var(--app-color);
-    z-index: 0;
+    z-index: 2;
 
-    padding: 20px;
+    padding: 60px;
     display: flex;
-    border: 18px solid var(--pink-accent);
-    border-radius: 15px;
     color: var(--blue-accent);
-    box-shadow: 0px 0px 10px var(--pink-accent);
+    
 }
 
 .inner-shadow{
@@ -109,7 +119,14 @@ h3{
     
 }
 
-/*Title*/
+.border-effect{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    border: 18px solid var(--pink-accent);
+    border-radius: 15px;
+    z-index: 0;
+    box-shadow: 0px 0px 10px var(--pink-accent);
+}
 
 /*Left column: letter insert and hangman image*/
 
@@ -117,28 +134,10 @@ h3{
     width: 30%;
 }
 
-#letter{
-    width: 95x;
-    height: 66px;
-    border: 1px solid #265DC9;
+#new-game-button{
+    font-size: 17px;
+
 }
-
-#try{
-    width: 66px;
-    height: 66px;
-    background: #265DC9;
-    border: 2px solid #265DC9;
-    border-radius: 15px;
-    color: #fff;
-    font-family: 'Starborn';
-    font-size: 22px;
-}
-
-#try::before{
-    border: 10px solid #fff;
-}
-
-
 
 /*Middle column: uncovered letters and failed letters*/
 
@@ -151,4 +150,12 @@ h3{
 
 .right-column{
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
+
+.image-hangman{
+    display: block;
+    height: 30%;
+}
+
