@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <title>HANGMAN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="starborn/Starborn.ttf">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <!--GAME APP UI-->
+        <!--TITLE-->
+        
+        <!--APP BOX-->
+        
+            <div class="title">hangman</div>
+            <div class="inner-shadow"></div>
+            <div class="app">
+            
+                <!--Letter insert and hangman image-->
+                <div class="left-column">
+                    <h2>NAME</h2>
+                    <h3>WINS:</h3>
+                    <h3>LOSSES:</h3>
+                    <button onclick="new_game()"> NEW GAME </button>
+
+                    
+                </div>
+
+                <!--Uncovered letters and incorrect letters-->
+                <div class="middle-column">
+                    <div id="gaps"></div> 
+                    <div id="wordtoguess"></div>
+                    <h3>incorrect letters:</h3>
+                </div>
+
+                <!--User name, wins and losses counters, new game button-->
+                <div class="right-column">
+                    <h2>INSERT A LETTER!</h2>
+                    <input id="letter" type="text">
+                    <button id="try" type="button" onclick="letter_send(document.getElementById('letter'))">TRY</button>
+                    <br><br><br>
+                    <div id="image_hangman">
+                        <img id="hangman_image">
+                    </div>
+                    
+                </div>
+
+            </div>
+        
+    </body>
+</html>
