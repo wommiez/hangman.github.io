@@ -56,44 +56,26 @@ button{
     border-radius: 15px;
     background-color: var(--blue-accent);
     color: white;
-    border: 2px solid rgba(255,255,255,0.7);
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    box-shadow: 0 5px #112b5d;
+    font-size: 20px;
 }
+
+button:hover{
+    background-color: white;
+    color: var(--blue-accent);
+}
+
+button:active{
+    background-color: var(--blue-accent);
+    color: white;
+    box-shadow: 0 0px #666;
+    transform: translateY(4px);
+}
+
+
 
 /*GAME APP INTERFACE*/
-
-/*Title with glow effects*/
-
-.title{
-    grid-column: 2/3;
-    grid-row: 2/5;
-    font-size: 100px;
-    position: relative;
-    z-index: 3;
-    line-height: 110px;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 25px var(--pink-accent);
-    
-
-}
-
-.title:after, .title:before{
-    top: 0px; left: 0px;
-    position: absolute;
-    content: 'hangman';
-}
-
-.title:after{
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 0px;
-    text-shadow: 3px 5px 20px var(--pink-accent);
-}
-
-.title:before{
-    -webkit-text-fill-color: none;
-    -webkit-text-stroke: 22px rgba(255,255,255,0.9);
-    filter: blur(2px);
-}
 
 /*Landing page css*/
 
@@ -162,6 +144,39 @@ button{
     font-size: 30px;
 }
 
+/*Title with glow effects*/
+
+.title{
+    grid-column: 2/3;
+    grid-row: 2/5;
+    font-size: 100px;
+    position: relative;
+    z-index: 3;
+    line-height: 120px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 25px var(--pink-accent);
+    
+
+}
+
+.title:after, .title:before{
+    top: 0px; left: 0px;
+    position: absolute;
+    content: 'hangman!';
+}
+
+.title:after{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0px;
+    text-shadow: 3px 5px 20px var(--pink-accent);
+}
+
+.title:before{
+    -webkit-text-fill-color: none;
+    -webkit-text-stroke: 20px rgba(255,255,255,0.9);
+    filter: blur(2px);
+}
+
 /*Main app ui with glow effects*/
 
 .app{
@@ -169,16 +184,18 @@ button{
     grid-row: 4/6;
     z-index: 2;
 
-    padding: 60px;
+    padding: 80px;
     display: flex;
     color: var(--blue-accent);
     
 }
 
+
+
 .inner-shadow{
     grid-column: 2/3;
     grid-row: 4/6;
-    border: 16px solid rgba(255,255,255,0.7);
+    border: 19px solid rgba(255,255,255,0.6);
     border-radius: 15px;
     filter: blur(2px);
     
@@ -189,28 +206,48 @@ button{
 .border-effect{
     grid-column: 2/3;
     grid-row: 4/6;
-    border: 18px solid var(--pink-accent);
+    border: 22px solid var(--pink-accent);
     border-radius: 15px;
     z-index: 0;
-    box-shadow: 0px 0px 10px var(--pink-accent);
+    box-shadow: 0px 0px 15px var(--pink-accent);
+
+    background: rgb(241,208,217);
+    background: linear-gradient(0deg, rgba(241,208,217,1) 10%, rgba(255,255,255,1) 53%, rgba(241,208,217,1) 90%);
 }
 
 /*Left column: letter insert and hangman image*/
 
 .left-column{
-    width: 30%;
+    width: 20%;
+    
 }
 
-#new-game-button{
-    font-size: 17px;
 
-}
 
 /*Middle column: uncovered letters and failed letters*/
 
 .middle-column{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+
+
+/*Right column: user's name, win count, loss count, new game button*/
+
+.right-column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letter-try{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .letter{
@@ -218,18 +255,12 @@ button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     width: 20%;
+    
 }
 
-/*Right column: user's name, win count, loss count, new game button*/
-
-.right-column{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-.image-hangman{
+#image-hangman{
     display: block;
     height: 30%;
 }
+
 

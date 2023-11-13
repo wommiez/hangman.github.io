@@ -12,39 +12,12 @@
     </head>
 
     <body>
-        <div class="app-2">
-            <h2>LET'S PLAY</h2>
-            <h1>hangman!</h1>
-            <br><br>
-            <div class="username">
-                <h3>PLEASE ENTER YOUR NAME:</h3>
-                <input id="user-name" type="text" class="user-name"/>
-                <br>
-                <a href ="game.html"><button>start!</button></a>
-            </div>
-            
-        </div>
-        
-    </body>
-</html>
-
-<html>
-    <head>
-        <title>HANGMAN</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="starborn/Starborn.ttf">
-        <script src="script.js"></script>
-    </head>
-
-    <body>
         <!--GAME APP UI-->
         <!--TITLE-->
         
         <!--APP BOX-->
         
-            <div class="title">hangman</div>
+            <div class="title">hangman!</div>
             <div class="inner-shadow"></div>
             <div class="app">
             
@@ -53,11 +26,12 @@
                     <h1 class="name" id="user">NAME</h1>
                     <h3>WINS:</h3>
                     <h3>LOSSES:</h3>
+                    <br><br>
                     <button id="new-game-button" onclick="new_game()"> NEW GAME </button>
 
                     
                 </div>
-
+                
                 <!--Uncovered letters and incorrect letters-->
                 <div class="middle-column">
                     <div id="gaps"></div> 
