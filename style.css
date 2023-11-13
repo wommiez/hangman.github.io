@@ -70,7 +70,7 @@ button{
     font-size: 100px;
     position: relative;
     z-index: 3;
-    line-height: 100px;
+    line-height: 110px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 25px var(--pink-accent);
     
@@ -93,6 +93,73 @@ button{
     -webkit-text-fill-color: none;
     -webkit-text-stroke: 22px rgba(255,255,255,0.9);
     filter: blur(2px);
+}
+
+/*Landing page css*/
+
+.app-2{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    z-index: 2;
+
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-2 h1{
+    font-size: 80px;
+    line-height: 80px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 13px var(--pink-accent);
+    position: relative;
+    margin: 5px;
+}
+
+.app-2 h1:after, .app-2 h1:before{
+    top: 0px; left: 0px;
+    position: absolute;
+    content: 'hangman!';
+}
+
+.app-2 h1:after{
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0px;
+    text-shadow: 3px 5px 7px var(--pink-accent);
+}
+
+.app-2 h1:before{
+    -webkit-text-fill-color: none;
+    -webkit-text-stroke: 10px rgba(255,255,255,0.9);
+    filter: blur(2px);
+}
+
+.app-2 h2{
+    font-size: 40px;
+    margin: 0;
+    line-height: 80px;
+    color: var(--pink-accent);
+}
+
+.app-2 h3{
+    font-size: 20px;
+    color: var(--blue-accent);
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.user-name{
+    color: #265DC9;
+    font-family: 'Starborn'; 
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
 }
 
 /*Main app ui with glow effects*/
@@ -144,6 +211,13 @@ button{
 .middle-column{
     width: 30%;
 
+}
+
+.letter{
+    color: #265DC9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    width: 20%;
 }
 
 /*Right column: user's name, win count, loss count, new game button*/
