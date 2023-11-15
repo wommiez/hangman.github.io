@@ -225,7 +225,7 @@ button:active{
     grid-row: 4/6;
     z-index: 2;
 
-    padding: 80px;
+    padding: 90px;
     display: flex;
     color: var(--blue-accent);
     
@@ -264,8 +264,10 @@ button:active{
 }
 
 #user{
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
+    text-shadow: 3px 1px 4px white;
+
 }
 
 /*Middle column: uncovered letters and failed letters*/
@@ -280,6 +282,13 @@ button:active{
 
 #gaps{
     font-size: 25px;
+}
+
+#incorrect_letters{
+    color: var(--pink-accent);
+    font-size: 30px;
+    width: 70%;
+    text-shadow: 3px 1px 4cqb white;
 }
 
 /*Right column: user's name, win count, loss count, new game button*/
