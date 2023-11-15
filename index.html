@@ -12,20 +12,73 @@
     </head>
 
     <body>
-        <div class="app-2">
-            <div class="landing-title">
-                <h2>LET'S PLAY</h2>
-                <h1>hangman!</h1>
-                <br><br>
-            </div>
-            
-            <div class="username">
-                <h3>PLEASE ENTER YOUR NAME:</h3>
-                <input id="user-name" type="text" class="user-name"/>
-                <br>
-                <a href ="game.html"><button>start!</button></a>
-            </div>
-            
-        </div>
+        <!--LANDING PAGE-->
         
+            <div class="app-2">
+                <div class="landing-title">
+                    <h2>LET'S PLAY</h2>
+                    <h1>hangman!</h1>
+                    <br><br>
+                </div>
+                
+                <div class="username">
+                    <h3>PLEASE ENTER YOUR NAME:</h3>
+                    <input id="user-name" type="text" class="user-name"/>
+                    <br>
+                    <a href =#two><button>start!</button></a>
+                </div>
+            </div>
+        
+        
+
+
+        <!--GAME-->
+        <!--TITLE-->
+        
+        <!--APP BOX-->
+        <div class="page" id="two">
+            <div class="title">hangman!</div>
+            <div class="inner-shadow"></div>
+            <div class="app">
+            
+                <!--Letter insert and hangman image-->
+                <div class="left-column">
+                    <h1 class="name" id="user">NAME</h1>
+                    <br>
+                    <h3>WINS:</h3>
+                    <h3>LOSSES:</h3>
+                    <br><br>
+                    <button id="new-game-button" onclick="new_game()"> NEW GAME </button>
+
+                    
+                </div>
+                
+                <!--Uncovered letters and incorrect letters-->
+                <div class="middle-column">
+                    <div id="gaps"></div> 
+                    <div id="incorrect_letters"></div>
+                    
+                </div>
+
+                <!--User name, wins and losses counters, new game button-->
+                <div class="right-column">
+                    <h1>INSERT A LETTER!</h1>
+                    <div class="letter-try">
+                        <input id="letter" type="text" class="letter">
+                        <button id="try" type="button" onclick="letter_send(document.getElementById('letter'))">TRY</button>
+                    </div>
+                    
+                    <div id="image_hangman">
+                        <img id="hangman_image">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="border-effect"></div>
+        </div>
+
+        </div>
+            
     </body>
+</html>
