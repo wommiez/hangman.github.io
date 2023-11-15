@@ -75,7 +75,7 @@ element.textContent = character.join(' ');
 
 function show_image(){
 var element = document.getElementById('hangman_image');
-element.src = "img/hangman_"+game.lives+".png";
+element.src = "image/hangman_"+game.lives+".png";
 }
 
 function letter_send(letter){
@@ -109,7 +109,7 @@ if(/^[A-Z]$/.test(letterInserted)) {
         game.charactersIncorrect.push(letterInserted); //Even if the letter was correct but they put it again, is a lossed live
         game.lives--;
         var element = document.getElementById('hangman_image');
-        element.src = "img/hangman_"+game.lives+".png"; //Update image
+        element.src = "image/hangman_"+game.lives+".png"; //Update image
         if(game.lives === 0){
             game_loss();
         }
