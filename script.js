@@ -59,7 +59,7 @@ element.textContent = character.join(' ');
 
 function show_image(){
 var element = document.getElementById('hangman_image');
-element.src = "img/hangman_"+game.lives+".png";
+element.src = "image/hangman_"+game.lives+".png";
 }
 
 function letter_send(letter){
@@ -91,7 +91,7 @@ if(repeated === false){
 if(letterInWord === false){
     game.lives--;
     var element = document.getElementById('hangman_image');
-    element.src = "img/hangman_"+game.lives+".png";
+    element.src = "image/hangman_"+game.lives+".png";
     if(game.lives === 0){
         game_loss();
     }
