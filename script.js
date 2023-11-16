@@ -122,13 +122,13 @@ if(/^[A-Z]$/.test(letterInserted) && game.lives > 0) {
 }
 
 function game_loss() {
-alert("You lost!\n The word was: "+game.word);
+alert("You lost! :(\n The word was: "+game.word);
 results.losses++;
 update_results();
 }
 
 function game_win() {
-alert("You won!")
+alert("You won! Congratulations :)")
 results.wins++;
 game.lives = 0;
 update_results();
