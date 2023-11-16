@@ -226,7 +226,7 @@ button:active{
     gap: 15px;
     z-index: 2;
 
-    padding: 90px;
+    padding: 70px;
     display: flex;
     color: var(--blue-accent);
     
