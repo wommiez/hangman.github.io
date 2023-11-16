@@ -259,7 +259,7 @@ button:active{
 /*Left column: letter insert and hangman image*/
 
 .left-column{
-    width: 20%;
+    width: 30%;
     
 }
 
@@ -273,7 +273,7 @@ button:active{
 /*Middle column: uncovered letters and failed letters*/
 
 .middle-column{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
