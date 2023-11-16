@@ -50,6 +50,6 @@ The website consists of two main pages:
 - **Claudia:** CSS Design
 - **Albert:** JavaScript Code
 
----
+##GITHUB LINK
 
-Feel free to expand on specific sections or customize the README further based on additional details you'd like to include.
+https://github.com/wommiez/hangman.github.io
