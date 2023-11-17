@@ -270,6 +270,7 @@ button:active{
     margin: 0;
     text-shadow: 3px 1px 4px white;
     min-width: 100%;
+    overflow-wrap: break-word;
 
 }
 
